@@ -101,3 +101,7 @@ To change the code go to repository > Open views > Open todo.js file > Edit line
 Commit changes.
 
 ## Build starts on its own
+
+To Stop and Remove containers :
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
