@@ -102,6 +102,10 @@ Commit changes.
 
 ## Build starts on its own
 
-To Stop and Remove containers :
+
+## To Stop and Remove Containers
+```bash
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
+```
+    
