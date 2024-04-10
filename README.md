@@ -72,8 +72,8 @@ CMD ["node","app.js"]
 Now in Jenkins go to Dashboard > Configure > Add Build Steps > Execute Shell. In the Command section, type the following command:
 
 ```bash
-sudo docker build . -t todo-node-app
-sudo docker run -d --name todo-node-app -p 8000:8000 todo-node-app
+docker build . -t todo-node-app
+docker run -d --name todo-node-app -p 8000:8000 todo-node-app
 
 ```
 ## The application is up and running. To access the application, use the following format of URL: public_IP_of_EC2:8080
